@@ -23,6 +23,9 @@ use vulkano::framebuffer::Subpass;
 use vulkano::command_buffer::DynamicState;
 use vulkano::pipeline::viewport::Viewport;
 
+mod triangle_window;
+use triangle_window::*;
+
 fn copy_buffer() {
     let instance = Instance::new(None, &InstanceExtensions::none(), None)
                              .expect("failed to create instance");
@@ -280,5 +283,6 @@ fn main() {
     // copy_buffer();
     // hello_shader();
     // hello_image();
-    hello_graphics();
+    // hello_graphics();
+    triangle_window_main();
 }
