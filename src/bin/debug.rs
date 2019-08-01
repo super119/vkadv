@@ -16,6 +16,7 @@ use vulkano::instance::{Instance, InstanceExtensions, PhysicalDevice};
 use vulkano::instance::debug::{DebugCallback, MessageTypes};
 
 fn main() {
+    println!("Core driver instance extensions: {:?}", InstanceExtensions::supported_by_core().unwrap());
     // Vulkano Debugging Example Code
     //
     // This example code will demonstrate using the debug functions of the Vulkano API.
