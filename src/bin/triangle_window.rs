@@ -35,7 +35,7 @@ use winit::{EventsLoop, Window, WindowBuilder, Event, WindowEvent};
 
 use std::sync::Arc;
 
-pub fn triangle_window_main() {
+pub fn main() {
     // The first step of any Vulkan program is to create an instance.
     let instance = {
         // When we create an instance, we have to pass a list of extensions that we want to enable.
